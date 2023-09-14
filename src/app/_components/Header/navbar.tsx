@@ -63,7 +63,7 @@ const Homenavbar = () => {
                 </Link>
               </li>
               <li className="text-black bg-gray-100 p-2 border rounded-lg">
-                <Link href="/blogs">
+                <Link href="/login">
                   新規登録
                 </Link>
               </li>
