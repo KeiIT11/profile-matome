@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>test</title>
       </Head>
-      <body>
+      <body className='flex flex-col min-h-screen'>
         <header>
           <Homenavbar />
         </header>

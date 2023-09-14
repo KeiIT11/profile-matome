@@ -5,12 +5,13 @@ import {
   withAuthenticator,
   WithAuthenticatorProps,
 } from '@aws-amplify/ui-react';
+=======
+import { withAuthenticator, WithAuthenticatorProps } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import awsExports from './aws-exports';
 import React from 'react';
 Amplify.configure(awsExports);
-
 
 function App({ signOut, user }: WithAuthenticatorProps) {
   return (
