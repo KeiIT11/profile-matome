@@ -155,7 +155,7 @@
     "authprofilematome3a1b033f": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify26600a62e4154-staging-65431-deployment/amplify-cfn-templates/auth/profilematome3a1b033f-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-profilematome-dev-115006-deployment/amplify-cfn-templates/auth/profilematome3a1b033f-cloudformation-template.json",
         "Parameters": {
           "identityPoolName": "profilematome3a1b033f_identitypool_3a1b033f",
           "allowUnauthenticatedIdentities": false,
@@ -201,7 +201,7 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
-          "env": "staging"
+          "env": "dev"
         }
       }
     },
