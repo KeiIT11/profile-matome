@@ -1,5 +1,5 @@
 {
   "projectPath": "/Users/sk/app/react_app/profile-matome",
-  "envName": "staging",
-  "defaultEditor": "vscode"
+  "defaultEditor": "vscode",
+  "envName": "dev"
 }

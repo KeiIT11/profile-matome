@@ -16,5 +16,29 @@
         "profilematome3a1b033f": {}
       }
     }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-profilematome-dev-115006-authRole",
+      "UnauthRoleArn": "arn:aws:iam::042989186743:role/amplify-profilematome-dev-115006-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::042989186743:role/amplify-profilematome-dev-115006-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-profilematome-dev-115006-deployment",
+      "UnauthRoleName": "amplify-profilematome-dev-115006-unauthRole",
+      "StackName": "amplify-profilematome-dev-115006",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:042989186743:stack/amplify-profilematome-dev-115006/ec0959d0-5504-11ee-ba52-0afe466788d9",
+      "AmplifyAppId": "d3pdjv57e8d1c1"
+    },
+    "categories": {
+      "auth": {
+        "profilematome3a1b033f": {}
+      },
+      "api": {
+        "profilematome": {}
+      },
+      "storage": {
+        "usericon": {}
+      }
+    }
   }
 }
