@@ -205,6 +205,53 @@
         }
       }
     },
+    "apiprofilematome": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-profilematome-dev-115006-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "AppSyncApiName": "profilematome",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "S3DeploymentBucket": "amplify-profilematome-dev-115006-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/5f3236162cfcaaf82f57aef1f92a40c1bc6cd930",
+          "env": "dev"
+        }
+      }
+    },
+    "storageusericon": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-profilematome-dev-115006-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "Parameters": {
+          "bucketName": "profilematomec5ef9ae873d245a19ffa723c11d4bc26",
+          "selectedGuestPermissions": "",
+          "selectedAuthenticatedPermissions": "s3:PutObject,s3:GetObject,s3:ListBucket,s3:DeleteObject",
+          "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+          },
+          "authRoleName": {
+            "Ref": "AuthRoleName"
+          },
+          "s3PrivatePolicy": "Private_policy_e46b8115",
+          "s3ProtectedPolicy": "Protected_policy_e46b8115",
+          "s3PublicPolicy": "Public_policy_e46b8115",
+          "s3ReadPolicy": "read_policy_e46b8115",
+          "s3UploadsPolicy": "Uploads_policy_e46b8115",
+          "authPolicyName": "s3_amplify_e46b8115",
+          "unauthPolicyName": "s3_amplify_e46b8115",
+          "AuthenticatedAllowList": "ALLOW",
+          "GuestAllowList": "DISALLOW",
+          "s3PermissionsAuthenticatedPrivate": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+          "s3PermissionsAuthenticatedProtected": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+          "s3PermissionsAuthenticatedPublic": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+          "s3PermissionsAuthenticatedUploads": "s3:PutObject",
+          "s3PermissionsGuestPublic": "DISALLOW",
+          "s3PermissionsGuestUploads": "DISALLOW",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",

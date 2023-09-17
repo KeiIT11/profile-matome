@@ -32,6 +32,12 @@
     "categories": {
       "auth": {
         "profilematome3a1b033f": {}
+      },
+      "api": {
+        "profilematome": {}
+      },
+      "storage": {
+        "usericon": {}
       }
     }
   }

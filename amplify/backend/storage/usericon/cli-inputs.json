@@ -1,0 +1,14 @@
+{
+  "resourceName": "usericon",
+  "policyUUID": "e46b8115",
+  "bucketName": "profilematomec5ef9ae873d245a19ffa723c11d4bc26",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

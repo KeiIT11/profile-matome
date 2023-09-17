@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-profilematome-dev-115006-deployment/amplify-cfn-templates/auth/profilematome3a1b033f-cloudformation-template.json",
         "logicalId": "authprofilematome3a1b033f"
       },
-      "lastPushTimeStamp": "2023-09-17T02:53:08.840Z",
+      "lastPushTimeStamp": "2023-09-17T04:41:53.139Z",
       "output": {
         "UserPoolId": "ap-northeast-1_KmMckk6bD",
         "AppClientIDWeb": "4mvrblempd8ecqltg7b1ups3af",
@@ -51,6 +51,50 @@
         "UserPoolName": "profilematome3a1b033f_userpool_3a1b033f"
       },
       "lastPushDirHash": "2fH10AE+G5+VchBtvuuW31oQKuM="
+    }
+  },
+  "api": {
+    "profilematome": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "gzrqsit6kfduzf2voonw7tidci",
+        "GraphQLAPIEndpointOutput": "https://q2gbepcat5dfnfb7angitcxlzq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-nc3hsgvdyzat5g2nvcie2psmqi"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-profilematome-dev-115006-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiprofilematome"
+      },
+      "lastPushTimeStamp": "2023-09-17T04:41:53.141Z",
+      "lastPushDirHash": "HMrKD6qHyaIVdXJ+Qh+3UGXUhIA="
+    }
+  },
+  "storage": {
+    "usericon": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2023-09-17T04:41:55.073Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-profilematome-dev-115006-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageusericon"
+      },
+      "output": {
+        "BucketName": "profilematomec5ef9ae873d245a19ffa723c11d4bc26115006-dev",
+        "Region": "ap-northeast-1"
+      },
+      "lastPushDirHash": "QzReRaw3JGjKisyp8LvL93NAbCI="
     }
   }
 }
