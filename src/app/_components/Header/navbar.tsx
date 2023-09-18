@@ -11,6 +11,11 @@ const HomeNavbar = () => {
       <div className="navbar-end">
         <ul className="menu menu-horizontal px-1">
           <li>
+            <Link href="/profiles/ranmaru">
+              マイページ
+            </Link>
+          </li>
+          <li>
             <Link href="/dashboard">
               編集画面
             </Link>
