@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import Homenavbar from '../_components/Header/navbar'
+import HomeNavbar from '../_components/Header/navbar'
 import Head from 'next/head'
-//import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -10,7 +9,7 @@ export default function Home() {
       </Head>
       <body className='flex flex-col min-h-screen'>
         <header>
-          <Homenavbar />
+          <HomeNavbar />
         </header>
         <main>
           <div>

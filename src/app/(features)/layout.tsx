@@ -1,8 +1,18 @@
 import '../_styles/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Zen_Kaku_Gothic_New, Noto_Sans_JP } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const zen_kaku_gothic = Zen_Kaku_Gothic_New({
+    weight: ["400"],
+    subsets: ['latin']
+})
+
+const noto_sans_jp = Noto_Sans_JP({
+    weight: ["400"],
+    subsets: ['latin']
+})
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -15,7 +25,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html data-theme="light" lang="ja" className={noto_sans_jp.className}>
             {children}
         </html>
     )
