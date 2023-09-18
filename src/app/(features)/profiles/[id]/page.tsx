@@ -4,6 +4,7 @@ import SNSCardList from "../_components/SNS-CardList";
 import fetchUserSNSCardIndex from "../_apis/fetchUser";
 import ShowingSelfIntroduction from "../_components/SelfIntroduction";
 import ShowingProfileIcon from "../_components/ProfileIcon";
+import HomeNavbar from "@/app/_components/Header/navbar";
 
 //dynamicParams = falseにすることで、動的ルーティングされたアドレス
 //以外にアクセスすると404ページにリダイレクトする。
@@ -18,7 +19,7 @@ export function generateStaticParams() {
 
 //サンプル用自己紹介文
 const introductionSample: string = `
-就活用の
+就活用のサンプルをコピー
 はじめまして、岡山県立大学３年の伊藤嵐丸と申します。
 私は普段大学では、学科の名前の通り、情報通信に関することとか、アルゴリズムや人工知能とかについても学んでいます。
 私が大学生活で特に力を入れたのが3つあって、
@@ -41,8 +42,11 @@ export default function Page({ params }: { params: { id: string } }) {
             <Head>
                 <title>test</title>
             </Head>
-            <body className='min-h-screen p-20'>
-                <main>
+            <body>
+                <header>
+                    <HomeNavbar />
+                </header>
+                <main className='min-h-screen p-20'>
                     <ShowingProfileIcon iconPath="/pokemon.jpeg" userName="ランマル" userID="ranmaru" />
                     <ShowingSelfIntroduction introduction={introductionSample} />
                     <SNSCardList snsCardIndexList={allSNSCardIndex} />

@@ -10,7 +10,7 @@ const zen_kaku_gothic = Zen_Kaku_Gothic_New({
 })
 
 const noto_sans_jp = Noto_Sans_JP({
-    weight: ["400"],
+    weight: ["300"],
     subsets: ['latin']
 })
 
@@ -25,7 +25,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html data-theme="light" lang="ja" className={noto_sans_jp.className}>
+        <html data-theme="light" lang="ja" className={zen_kaku_gothic.className}>
             {children}
         </html>
     )
